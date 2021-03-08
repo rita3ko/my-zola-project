@@ -1,5 +1,6 @@
 # The URL the site will be built for
-base_url = "https://example.com"
+base_url = "https://my-zola-project.pages.dev"
+#theme = "slim"
 
 # Whether to automatically compile all Sass files in the sass directory
 compile_sass = true
@@ -13,4 +14,14 @@ build_search_index = true
 highlight_code = true
 
 [extra]
-# Put all your custom variables here
+
+[params]
+  Subtitle = "Hello homes!"
+  GithubID = "Your Github ID"
+  TwitterID = "Your Twitter ID"
+  DisqusShortname = "Your Disqus shortname"
+  Summary = true  # takes true or false
+  Content = false  # takes true or false
+  # if both are set to true, summary is shown.
+  # FooterMsg = "Copyright Me 2016. Powered by Hugo."
+  mainSections = ["post"]
